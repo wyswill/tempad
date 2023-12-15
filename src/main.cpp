@@ -4,8 +4,8 @@
 #include <lvgl.h>
 
 /*------------ LVGL ------------*/
-#define MY_DISP_HOR_RES 240 // 显示屏的宽像素
-#define MY_DISP_VER_RES 320 // 显示屏的高像素
+#define MY_DISP_HOR_RES 320 // 显示屏的宽像素
+#define MY_DISP_VER_RES 240 // 显示屏的高像素
 #define DISP_BUF_SIZE ((MY_DISP_HOR_RES * MY_DISP_VER_RES) / 10)
 
 static lv_disp_draw_buf_t draw_buf;     // 绘制缓冲区的内部图形缓冲区
@@ -122,6 +122,15 @@ void lvgl_button_test()
     }
   }
 }
+
+void showLogo()
+{
+  LV_IMG_DECLARE(tva);
+  lv_obj_t *img = lv_img_create(lv_scr_act());
+  lv_img_set_src(img, &tva);
+  lv_obj_set_pos(img, 0, 0);
+}
+
 void setup(void)
 {
   Serial.begin(115200);
@@ -136,10 +145,11 @@ void setup(void)
   /* lvgl 初始化 */
   lvgl_init();
 
+  showLogo();
   /* 加载标签 */
   // lvgl_lable_test();
   /* 加载按钮 */
-  lvgl_button_test();
+  // lvgl_button_test();
 }
 
 void loop()
