@@ -1,0 +1,20 @@
+{
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.htm": "php",
+    "*.txt": "markdown",
+    "*.jce": "jce",
+    "*.conf": "nginx",
+    ".pathaliasrc": "json",
+    "*.json": "json",
+    "*.sh": "shellscript",
+    "*.jsons": "jsonc",
+    "*.scpt": "applescript",
+    "*.vue": "vue",
+    "*.html": "html",
+    "*.dbml": "dbml",
+    "lv_demos.h": "c"
+  }
+}
