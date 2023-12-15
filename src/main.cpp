@@ -1,6 +1,7 @@
 #define TEXT "TVA" // Text that will be printed on screen in any font
 
-#include "../.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/All_Free_Fonts_Demo/Free_Fonts.h" // Include the header file attached to this sketch
+// #include "../.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/All_Free_Fonts_Demo/Free_Fonts.h" // Include the header file attached to this sketch
+#include "../lib/TFT_eSPI/examples/320 x 240/All_Free_Fonts_Demo/Free_Fonts.h"
 #include "Arduino.h"
 #include "SPI.h"
 #include "TFT_eSPI.h"
