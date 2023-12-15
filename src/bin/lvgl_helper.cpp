@@ -123,11 +123,11 @@ void lvgl_button_test()
 
 void showLogo()
 {
-  LV_IMG_DECLARE(tva);
-  int x = (MY_DISP_HOR_RES - tva.header.w) / 2;
-  int y = (MY_DISP_VER_RES - tva.header.h) / 2;
+  LV_IMG_DECLARE(main_scream_320x240);
+  // int x = (MY_DISP_HOR_RES - tva.header.w) / 2;
+  // int y = (MY_DISP_VER_RES - tva.header.h) / 2;
   lv_obj_t *img = lv_img_create(lv_scr_act());
-  lv_img_set_src(img, &tva);
+  lv_img_set_src(img, &main_scream_320x240);
 
-  lv_obj_set_pos(img, x, y);
+  lv_obj_set_pos(img, 0, 0);
 }
