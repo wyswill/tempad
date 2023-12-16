@@ -48,13 +48,37 @@ void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color
   lv_disp_flush_ready(disp);
 }
 
+static void touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
+{
+  uint16_t touchX, touchY;
+
+  bool touched = tft.getTouch(&touchX, &touchY, 600);
+
+  if (!touched)
+  {
+    data->state = LV_INDEV_STATE_REL;
+  }
+  else
+  {
+    data->state = LV_INDEV_STATE_PR;
+
+    /*Set the coordinates*/
+    data->point.x = touchX;
+    data->point.y = touchY;
+
+    Serial.print("Data x");
+    Serial.println(touchX);
+
+    Serial.print("Data y");
+    Serial.println(touchY);
+  }
+}
 void lvgl_init()
 {
   /*------------- 初始化LVGL库 -------------*/
   lv_init();
 
   /* 初始化显示缓冲区 */
-  // lv_disp_draw_buf_init(&draw_buf, buf_1, NULL, DISP_BUF_SIZE);
 
   /*------------- 创建图形绘制缓冲区 -------------*/
   buf1 = (lv_color_t *)heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), MALLOC_CAP_DMA);
@@ -75,12 +99,14 @@ void lvgl_init()
   lv_disp_drv_register(&disp_drv);    // 注册驱动
 
   /*------------- 设置LVGL的输入设备 -------------*/
-  // static lv_indev_t *indev_cor;
+
+  /*创建一个输入设备驱动*/
+  static lv_indev_t *indev_cor;
   static lv_indev_drv_t indev_drv;        // 输入驱动程序的描述符
   lv_indev_drv_init(&indev_drv);          // 初始化
   indev_drv.type = LV_INDEV_TYPE_POINTER; // 设置设备类型
-  // indev_drv.read_cb = touch_read;                      // 输入设备的回调函数
-  lv_indev_drv_register(&indev_drv); // 创建输入设备
+  indev_drv.read_cb = touchpad_read;      // 输入设备的回调函数
+  lv_indev_drv_register(&indev_drv);      // 创建输入设备
 }
 
 /**
@@ -93,31 +119,10 @@ static void btn_event_callback(lv_event_t *event)
   lv_obj_t *btn = lv_event_get_target(event); // 获取事件对象
   if (btn != NULL)
   {
-    // lv_label_set_text_fmt(label, "%d", counter);  // 设置显示内容
+    // lv_label_set_text_fmt(label, "%d", counter); // 设置显示内容
     // lv_obj_align(label, LV_ALIGN_CENTER, 0, -50); // 居中显示后，向上偏移50
-    // counter++;
-  }
-}
-/**
- * @brief 创建按钮
- */
-void lvgl_button_test()
-{
-  /* 在当前界面中创建一个按钮 */
-  lv_obj_t *btn = lv_btn_create(lv_scr_act()); // 创建Button对象
-  if (btn != NULL)
-  {
-    lv_obj_set_size(btn, 80, 20); // 设置对象宽度和高度
-    // lv_obj_set_pos(btn, 90, 200);                                                // 设置按钮的X和Y坐标
-    // lv_obj_add_event_cb(btn, btn_event_callback, LV_EVENT_CLICKED, NULL); // 给对象添加CLICK事件和事件处理回调函数
-    lv_obj_align(btn, LV_ALIGN_CENTER, 0, 50); // 居中显示后，向下偏移50
-
-    lv_obj_t *btn_label = lv_label_create(btn); // 基于Button对象创建Label对象
-    if (btn_label != NULL)
-    {
-      lv_label_set_text(btn_label, "button"); // 设置显示内容
-      lv_obj_center(btn_label);               // 对象居中显示
-    }
+    Serial.println(counter);
+    counter++;
   }
 }
 
@@ -130,4 +135,21 @@ void showLogo()
   lv_img_set_src(img, &main_scream_320x240);
 
   lv_obj_set_pos(img, 0, 0);
+}
+
+void touch_test()
+{
+  uint16_t x, y;
+
+  if (tft.getTouch(&x, &y))
+  {
+    tft.fillCircle(x, y, 2, TFT_ORANGE);
+    // 触摸屏被驱动并且正在被触摸
+    Serial.println("Touch screen is working!");
+  }
+  else
+  {
+    // 触摸屏没有被驱动或者没有被触摸
+    Serial.println("Touch screen is not working...");
+  }
 }

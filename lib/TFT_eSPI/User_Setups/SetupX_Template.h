@@ -104,7 +104,7 @@
 // If colours are inverted (white shows as black) then uncomment one of the next
 // 2 lines try both options, one of the options should correct the inversion.
 
-// #define TFT_INVERSION_ON
+#define TFT_INVERSION_ON
 // #define TFT_INVERSION_OFF
 
 
@@ -122,70 +122,6 @@
 
 // #define TFT_BL   32            // LED back-light control pin
 // #define TFT_BACKLIGHT_ON HIGH  // Level to turn ON back-light (HIGH or LOW)
-
-
-
-// We must use hardware SPI, a minimum of 3 GPIO pins is needed.
-// Typical setup for ESP8266 NodeMCU ESP-12 is :
-//
-// Display SDO/MISO  to NodeMCU pin D6 (or leave disconnected if not reading TFT)
-// Display LED       to NodeMCU pin VIN (or 5V, see below)
-// Display SCK       to NodeMCU pin D5
-// Display SDI/MOSI  to NodeMCU pin D7
-// Display DC (RS/AO)to NodeMCU pin D3
-// Display RESET     to NodeMCU pin D4 (or RST, see below)
-// Display CS        to NodeMCU pin D8 (or GND, see below)
-// Display GND       to NodeMCU pin GND (0V)
-// Display VCC       to NodeMCU 5V or 3.3V
-//
-// The TFT RESET pin can be connected to the NodeMCU RST pin or 3.3V to free up a control pin
-//
-// The DC (Data Command) pin may be labelled AO or RS (Register Select)
-//
-// With some displays such as the ILI9341 the TFT CS pin can be connected to GND if no more
-// SPI devices (e.g. an SD Card) are connected, in this case comment out the #define TFT_CS
-// line below so it is NOT defined. Other displays such at the ST7735 require the TFT CS pin
-// to be toggled during setup, so in these cases the TFT_CS line must be defined and connected.
-//
-// The NodeMCU D0 pin can be used for RST
-//
-//
-// Note: only some versions of the NodeMCU provide the USB 5V on the VIN pin
-// If 5V is not available at a pin you can use 3.3V but backlight brightness
-// will be lower.
-
-
-// ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP8266 SETUP ######
-
-// For NodeMCU - use pin numbers in the form PIN_Dx where Dx is the NodeMCU pin designation
-#define TFT_CS   PIN_D8  // Chip select control pin D8
-#define TFT_DC   PIN_D3  // Data Command control pin
-#define TFT_RST  PIN_D4  // Reset pin (could connect to NodeMCU RST, see next line)
-//#define TFT_RST  -1    // Set TFT_RST to -1 if the display RESET is connected to NodeMCU RST or 3.3V
-
-//#define TFT_BL PIN_D1  // LED back-light (only for ST7789 with backlight control pin)
-
-//#define TOUCH_CS PIN_D2     // Chip select pin (T_CS) of touch screen
-
-//#define TFT_WR PIN_D2       // Write strobe for modified Raspberry Pi TFT only
-
-
-// ######  FOR ESP8266 OVERLAP MODE EDIT THE PIN NUMBERS IN THE FOLLOWING LINES  ######
-
-// Overlap mode shares the ESP8266 FLASH SPI bus with the TFT so has a performance impact
-// but saves pins for other functions. It is best not to connect MISO as some displays
-// do not tristate that line when chip select is high!
-// On NodeMCU 1.0 SD0=MISO, SD1=MOSI, CLK=SCLK to connect to TFT in overlap mode
-// On NodeMCU V3  S0 =MISO, S1 =MOSI, S2 =SCLK
-// In ESP8266 overlap mode the following must be defined
-
-//#define TFT_SPI_OVERLAP
-
-// In ESP8266 overlap mode the TFT chip select MUST connect to pin D3
-//#define TFT_CS   PIN_D3
-//#define TFT_DC   PIN_D5  // Data Command control pin
-//#define TFT_RST  PIN_D4  // Reset pin (could connect to NodeMCU RST, see next line)
-//#define TFT_RST  -1  // Set TFT_RST to -1 if the display RESET is connected to NodeMCU RST or 3.3V
 
 
 // ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP32 SETUP   ######

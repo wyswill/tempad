@@ -16,5 +16,6 @@
     "*.html": "html",
     "*.dbml": "dbml",
     "lv_demos.h": "c"
-  }
+  },
+  "cmake.sourceDirectory": "/Users/wangyansong/project/cooper/tempad/lib/lvgl"
 }
