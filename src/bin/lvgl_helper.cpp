@@ -32,7 +32,7 @@ void disp_drv_init()
  * @param area 图像需要显示的区域
  * @param color_p 描绘后的图形
  */
-void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
+void disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
 {
   uint32_t w = (area->x2 - area->x1 + 1);
   uint32_t h = (area->y2 - area->y1 + 1);
@@ -46,7 +46,7 @@ void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color
   lv_disp_flush_ready(disp);
 }
 
-static void touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
+static void touch_pad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
 {
   uint16_t touchX, touchY;
 
@@ -64,11 +64,6 @@ static void touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
     data->point.x = touchX;
     data->point.y = touchY;
 
-    Serial.print("Data x");
-    Serial.println(touchX);
-
-    Serial.print("Data y");
-    Serial.println(touchY);
   }
 }
 void lvgl_init()
@@ -92,7 +87,7 @@ void lvgl_init()
   lv_disp_drv_init(&disp_drv);        // 初始化句柄，确保所有参数都是默认值
   disp_drv.hor_res = MY_DISP_HOR_RES; // 设置显示器的水平分辨率
   disp_drv.ver_res = MY_DISP_VER_RES; // 设置显示器的垂直分辨率
-  disp_drv.flush_cb = my_disp_flush;  // 显示驱动的回调函数
+  disp_drv.flush_cb = disp_flush;  // 显示驱动的回调函数
   disp_drv.draw_buf = &draw_buf;      // 将缓冲区分配给显示器
   lv_disp_drv_register(&disp_drv);    // 注册驱动
 
@@ -103,18 +98,19 @@ void lvgl_init()
   static lv_indev_drv_t indev_drv;        // 输入驱动程序的描述符
   lv_indev_drv_init(&indev_drv);          // 初始化
   indev_drv.type = LV_INDEV_TYPE_POINTER; // 设置设备类型
-  indev_drv.read_cb = touchpad_read;      // 输入设备的回调函数
+  indev_drv.read_cb = touch_pad_read;      // 输入设备的回调函数
   lv_indev_drv_register(&indev_drv);      // 创建输入设备
 }
 
 
-void showLogo()
-{
-  LV_IMG_DECLARE(main_scream_320x240);
-  // int x = (MY_DISP_HOR_RES - tva.header.w) / 2;
-  // int y = (MY_DISP_VER_RES - tva.header.h) / 2;
-  lv_obj_t *img = lv_img_create(lv_scr_act());
-  lv_img_set_src(img, &main_scream_320x240);
+// void showLogo()
+// {
+//   LV_IMG_DECLARE(main_scream_320x240);
+//   // 设置居中
+//   // int x = (MY_DISP_HOR_RES - tva.header.w) / 2; 
+//   // int y = (MY_DISP_VER_RES - tva.header.h) / 2;
+//   lv_obj_t *img = lv_img_create(lv_scr_act());
+//   lv_img_set_src(img, &main_scream_320x240);
 
-  lv_obj_set_pos(img, 0, 0);
-}
+//   lv_obj_set_pos(img, 0, 0);
+// }

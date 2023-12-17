@@ -28,7 +28,7 @@ void my_print(const char * buf)
 #endif
 
 /* Display flushing */
-void my_disp_flush( lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p )
+void disp_flush( lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p )
 {
     uint32_t w = ( area->x2 - area->x1 + 1 );
     uint32_t h = ( area->y2 - area->y1 + 1 );
@@ -101,7 +101,7 @@ void setup()
     /*Change the following line to your display resolution*/
     disp_drv.hor_res = screenWidth;
     disp_drv.ver_res = screenHeight;
-    disp_drv.flush_cb = my_disp_flush;
+    disp_drv.flush_cb = disp_flush;
     disp_drv.draw_buf = &draw_buf;
     lv_disp_drv_register( &disp_drv );
 
@@ -111,25 +111,25 @@ void setup()
     indev_drv.type = LV_INDEV_TYPE_POINTER;
     indev_drv.read_cb = my_touchpad_read;
     lv_indev_drv_register( &indev_drv );
-  
+
     /* Create simple label */
     lv_obj_t *label = lv_label_create( lv_scr_act() );
     lv_label_set_text( label, "Hello Ardino and LVGL!");
     lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );
- 
-    /* Try an example. See all the examples 
+
+    /* Try an example. See all the examples
      * online: https://docs.lvgl.io/master/examples.html
      * source codes: https://github.com/lvgl/lvgl/tree/e7f88efa5853128bf871dde335c0ca8da9eb7731/examples */
      //lv_example_btn_1();
-   
+
      /*Or try out a demo. Don't forget to enable the demos in lv_conf.h. E.g. LV_USE_DEMOS_WIDGETS*/
-    //lv_demo_widgets();               
-    // lv_demo_benchmark();          
-    // lv_demo_keypad_encoder();     
-    // lv_demo_music();              
+    //lv_demo_widgets();
+    // lv_demo_benchmark();
+    // lv_demo_keypad_encoder();
+    // lv_demo_music();
     // lv_demo_printer();
     // lv_demo_stress();
-    
+
     Serial.println( "Setup done" );
 }
 
