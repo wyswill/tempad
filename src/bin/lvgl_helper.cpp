@@ -1,5 +1,3 @@
-#include "SPI.h"
-#include "TFT_eSPI.h"
 #include "lvgl_helper.h"
 
 /*------------ LVGL ------------*/
@@ -109,22 +107,6 @@ void lvgl_init()
   lv_indev_drv_register(&indev_drv);      // 创建输入设备
 }
 
-/**
- * @brief 按钮事件回调函数
- */
-static void btn_event_callback(lv_event_t *event)
-{
-  static uint32_t counter = 1;
-
-  lv_obj_t *btn = lv_event_get_target(event); // 获取事件对象
-  if (btn != NULL)
-  {
-    // lv_label_set_text_fmt(label, "%d", counter); // 设置显示内容
-    // lv_obj_align(label, LV_ALIGN_CENTER, 0, -50); // 居中显示后，向上偏移50
-    Serial.println(counter);
-    counter++;
-  }
-}
 
 void showLogo()
 {
@@ -135,21 +117,4 @@ void showLogo()
   lv_img_set_src(img, &main_scream_320x240);
 
   lv_obj_set_pos(img, 0, 0);
-}
-
-void touch_test()
-{
-  uint16_t x, y;
-
-  if (tft.getTouch(&x, &y))
-  {
-    tft.fillCircle(x, y, 2, TFT_ORANGE);
-    // 触摸屏被驱动并且正在被触摸
-    Serial.println("Touch screen is working!");
-  }
-  else
-  {
-    // 触摸屏没有被驱动或者没有被触摸
-    Serial.println("Touch screen is not working...");
-  }
 }

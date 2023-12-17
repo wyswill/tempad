@@ -10,7 +10,6 @@ void setup(void)
   disp_drv_init();
 
   lvgl_init();
-  
   lv_demo_widgets();
 }
 
