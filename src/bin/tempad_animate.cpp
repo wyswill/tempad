@@ -1,6 +1,0 @@
-void loading_progress() {
-
-
-}
-
-
