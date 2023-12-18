@@ -10,7 +10,8 @@ void setup(void)
   // 初始化lvgl
   lvgl_init();
 
-  
+  Main_page mp;
+  mp.set_bg();
 }
 
 void loop()

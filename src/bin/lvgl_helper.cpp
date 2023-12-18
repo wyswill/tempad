@@ -1,8 +1,6 @@
 #include "lvgl_helper.h"
 
-/*------------ LVGL ------------*/
-#define MY_DISP_HOR_RES 320 // 显示屏的宽像素
-#define MY_DISP_VER_RES 240 // 显示屏的高像素
+
 #define DISP_BUF_SIZE ((MY_DISP_HOR_RES * MY_DISP_VER_RES) / 10)
 
 static lv_disp_draw_buf_t draw_buf;     // 绘制缓冲区的内部图形缓冲区
