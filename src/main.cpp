@@ -1,6 +1,8 @@
 #include "Arduino.h"
 #include "lvgl_helper.h"
 #include "tempad.h"
+#include "ui/ui.h"
+
 void setup(void)
 {
   Serial.begin(115200);
@@ -11,8 +13,9 @@ void setup(void)
   // 初始化lvgl
   lvgl_init();
 
-  Tempad tp;
-  tp.loading_page();
+  ui_init();
+  // Tempad tp;
+  // tp.loading_page();
 }
 
 void loop()
