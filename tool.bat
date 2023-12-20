@@ -1,0 +1,1 @@
+ffmpeg -i logo.png -vf scale=100:50 logo_100x50.png
