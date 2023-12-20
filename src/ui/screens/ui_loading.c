@@ -60,4 +60,6 @@ void ui_loading_screen_init(void)
     lv_obj_set_style_bg_opa(ui_loadingBar, 255, LV_PART_INDICATOR | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_grad_color(ui_loadingBar, lv_color_hex(0xFFFFFF), LV_PART_INDICATOR | LV_STATE_DEFAULT);
 
+    lv_obj_add_event_cb(ui_loading, ui_event_loading, LV_EVENT_ALL, NULL);
+
 }
