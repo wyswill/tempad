@@ -1,1 +1,1 @@
-ffmpeg -i album.png -vf scale=40:60 album_40x60.png
+ffmpeg -i TVA_LOGO_2.png -vf scale=40:40 TVA_LOGO_2_40x40.png
