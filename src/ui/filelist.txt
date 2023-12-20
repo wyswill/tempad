@@ -1,6 +1,14 @@
+components/ui_comp_loadingbar.c
+components/ui_comp.c
+screens/ui_loading.c
+screens/ui_mainPage.c
 screens/ui_Screen1.c
 ui.c
 components/ui_comp_hook.c
 ui_helpers.c
 ui_events.c
 images/ui_img_logo_100x50_png.c
+images/ui_img_setting_40x60_png.c
+images/ui_img_timeline_40x60_png.c
+images/ui_img_album_40x60_png.c
+images/ui_img_tva_logo_2_png.c

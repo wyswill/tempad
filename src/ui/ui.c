@@ -9,14 +9,37 @@
 ///////////////////// VARIABLES ////////////////////
 
 
+// SCREEN: ui_loading
+void ui_loading_screen_init(void);
+lv_obj_t * ui_loading;
+lv_obj_t * ui_Image1;
+lv_obj_t * ui_Label1;
+lv_obj_t * ui_loadingBar;
+
+
+// SCREEN: ui_mainPage
+void ui_mainPage_screen_init(void);
+lv_obj_t * ui_mainPage;
+lv_obj_t * ui_Container1;
+lv_obj_t * ui_Image2;
+lv_obj_t * ui_Label2;
+lv_obj_t * ui_setting;
+lv_obj_t * ui_timeLine;
+lv_obj_t * ui_album;
+lv_obj_t * ui_Label3;
+lv_obj_t * ui_Label4;
+lv_obj_t * ui_Label5;
+
+
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
 lv_obj_t * ui_Screen1;
-lv_obj_t * ui_logo;
-lv_obj_t * ui_Label1;
-lv_obj_t * ui_Bar1;
 lv_obj_t * ui____initial_actions0;
 const lv_img_dsc_t * ui_imgset_logo_100x[1] = {&ui_img_logo_100x50_png};
+const lv_img_dsc_t * ui_imgset_tva_logo_[1] = {&ui_img_tva_logo_2_png};
+const lv_img_dsc_t * ui_imgset_setting_40x[1] = {&ui_img_setting_40x60_png};
+const lv_img_dsc_t * ui_imgset_timeline_40x[1] = {&ui_img_timeline_40x60_png};
+const lv_img_dsc_t * ui_imgset_album_40x[1] = {&ui_img_album_40x60_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -34,11 +57,15 @@ const lv_img_dsc_t * ui_imgset_logo_100x[1] = {&ui_img_logo_100x50_png};
 
 void ui_init(void)
 {
+    LV_EVENT_GET_COMP_CHILD = lv_event_register_id();
+
     lv_disp_t * dispp = lv_disp_get_default();
     lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
                                                false, LV_FONT_DEFAULT);
     lv_disp_set_theme(dispp, theme);
+    ui_loading_screen_init();
+    ui_mainPage_screen_init();
     ui_Screen1_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
-    lv_disp_load_scr(ui_Screen1);
+    lv_disp_load_scr(ui_loading);
 }
