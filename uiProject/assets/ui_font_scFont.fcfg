@@ -1,0 +1,16 @@
+{
+  "codename": "scFont",
+  "ttf_path": "\\assets\\Source Code Pro for Powerline.otf",
+  "bin_path": "\\assets\\ui_font_scFont.bin",
+  "c_path": "\\assets\\ui_font_scFont.c",
+  "cfg_path": "\\assets\\ui_font_scFont.fcfg",
+  "size": 12,
+  "bpp": 1,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

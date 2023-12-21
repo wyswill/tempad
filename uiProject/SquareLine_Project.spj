@@ -267,7 +267,7 @@
               {
                 "nid": -1446774425,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/bg_greap_10x10.png",
+                "strval": "assets\\bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -561,7 +561,7 @@
               {
                 "nid": 399984970,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/logo_120x70.png",
+                "strval": "assets\\logo_120x70.png",
                 "InheritedType": 5
               },
               {
@@ -882,6 +882,12 @@
                           255
                         ],
                         "InheritedType": 7
+                      },
+                      {
+                        "nid": 1188684650,
+                        "strtype": "_style/Text_Font",
+                        "strval": "scFont",
+                        "InheritedType": 3
                       }
                     ],
                     "InheritedType": 1
@@ -1514,7 +1520,7 @@
               {
                 "nid": 537016468,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/miss_loading_40x40.png",
+                "strval": "assets\\miss_loading_40x40.png",
                 "InheritedType": 5
               },
               {
@@ -1804,7 +1810,7 @@
           {
             "disabled": false,
             "nid": 784417934,
-            "strtype": "SCREEN/EventHandler",
+            "strtype": "_event/EventHandler",
             "strval": "SCREEN_LOADED",
             "childs": [
               {
@@ -1827,7 +1833,7 @@
               },
               {
                 "nid": 1817129519,
-                "strtype": "_custom/action",
+                "strtype": "_event/action",
                 "strval": "INCREMENT BAR",
                 "childs": [
                   {
@@ -1871,7 +1877,7 @@
               },
               {
                 "nid": 362876898,
-                "strtype": "_custom/action",
+                "strtype": "_event/action",
                 "strval": "PLAY ANIMATION",
                 "childs": [
                   {
@@ -1920,7 +1926,7 @@
               },
               {
                 "nid": -1004008556,
-                "strtype": "_custom/action",
+                "strtype": "_event/action",
                 "strval": "CHANGE SCREEN",
                 "childs": [
                   {
@@ -2238,7 +2244,7 @@
               {
                 "nid": 215844220,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/bg_greap_10x10.png",
+                "strval": "assets\\bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -2835,7 +2841,7 @@
               {
                 "nid": 1858693510,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/logo_120x70.png",
+                "strval": "assets\\logo_120x70.png",
                 "InheritedType": 5
               },
               {
@@ -3441,7 +3447,7 @@
               {
                 "nid": 1129322451,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/setting_40x60.png",
+                "strval": "assets\\setting_40x60.png",
                 "InheritedType": 5
               },
               {
@@ -3811,7 +3817,7 @@
               {
                 "nid": -846778854,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/timeline_40x60.png",
+                "strval": "assets\\timeline_40x60.png",
                 "InheritedType": 5
               },
               {
@@ -4181,7 +4187,7 @@
               {
                 "nid": 366064119,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/album_40x60.png",
+                "strval": "assets\\album_40x60.png",
                 "InheritedType": 5
               },
               {
@@ -5655,7 +5661,7 @@
               {
                 "nid": 506502903,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/TVA_LOGO_2_40x40.png",
+                "strval": "assets\\TVA_LOGO_2_40x40.png",
                 "InheritedType": 5
               },
               {
@@ -5949,7 +5955,7 @@
               {
                 "nid": 381988187,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/mis_wite_60X60.png",
+                "strval": "assets\\mis_wite_60X60.png",
                 "InheritedType": 5
               },
               {
@@ -6498,7 +6504,7 @@
               {
                 "nid": 1658712791,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/bg_greap_10x10.png",
+                "strval": "assets\\bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -6792,7 +6798,7 @@
               {
                 "nid": 1697789735,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/TVA_LOGO_2_40x40.png",
+                "strval": "assets\\TVA_LOGO_2_40x40.png",
                 "InheritedType": 5
               },
               {
@@ -9454,7 +9460,7 @@
                 "nid": -1193904347,
                 "compnid": 250384480,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/bg_greap_10x10.png",
+                "strval": "assets\\bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -9485,98 +9491,98 @@
                 "childs": [
                   {
                     "nid": -1761093706,
-                    "compnid": -1278879828,
+                    "compnid": 316267805,
                     "strtype": "_style/StyleState",
                     "strval": "DEFAULT",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1292066868,
-                    "compnid": -2112649874,
+                    "compnid": -695958005,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1327979629,
-                    "compnid": 821876658,
+                    "compnid": -1976120645,
                     "strtype": "_style/StyleState",
                     "strval": "PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 644601924,
-                    "compnid": 720790366,
+                    "compnid": 495711879,
                     "strtype": "_style/StyleState",
                     "strval": "DISABLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1461597303,
-                    "compnid": -1801415615,
+                    "compnid": 1179398229,
                     "strtype": "_style/StyleState",
                     "strval": "SCROLLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1394066159,
-                    "compnid": 1377928751,
+                    "compnid": -802616584,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 991922725,
-                    "compnid": 843078918,
+                    "compnid": -206793767,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1528009222,
-                    "compnid": 311884055,
+                    "compnid": 483983597,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 759929325,
-                    "compnid": -228476656,
+                    "compnid": 1304153878,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1090914607,
-                    "compnid": 1110369100,
+                    "compnid": -161114786,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": 466278835,
-                    "compnid": -366742742,
+                    "compnid": 1258962438,
                     "strtype": "_style/StyleState",
                     "strval": "USER_1",
                     "InheritedType": 1
                   },
                   {
                     "nid": 597036289,
-                    "compnid": -2028474345,
+                    "compnid": -360151916,
                     "strtype": "_style/StyleState",
                     "strval": "USER_2",
                     "InheritedType": 1
                   },
                   {
                     "nid": -704223287,
-                    "compnid": -2129132976,
+                    "compnid": 392857551,
                     "strtype": "_style/StyleState",
                     "strval": "USER_3",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1043893388,
-                    "compnid": 1549862075,
+                    "compnid": 234619156,
                     "strtype": "_style/StyleState",
                     "strval": "USER_4",
                     "InheritedType": 1
@@ -9924,91 +9930,91 @@
                   },
                   {
                     "nid": 1047781224,
-                    "compnid": -284155390,
+                    "compnid": -1453898458,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 2003092031,
-                    "compnid": -1618264832,
+                    "compnid": 1581666804,
                     "strtype": "_style/StyleState",
                     "strval": "PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -215820329,
-                    "compnid": 228858866,
+                    "compnid": 1611113119,
                     "strtype": "_style/StyleState",
                     "strval": "DISABLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 941253423,
-                    "compnid": -121058883,
+                    "compnid": 1887921121,
                     "strtype": "_style/StyleState",
                     "strval": "SCROLLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 540105770,
-                    "compnid": -192928640,
+                    "compnid": 172654918,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1091043207,
-                    "compnid": -1049754739,
+                    "compnid": -1901735335,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1304078083,
-                    "compnid": 393047280,
+                    "compnid": 350411375,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1091530906,
-                    "compnid": -21990017,
+                    "compnid": 1222942190,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1525295918,
-                    "compnid": 612943708,
+                    "compnid": 661712882,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1225516342,
-                    "compnid": -2029253563,
+                    "compnid": -233158814,
                     "strtype": "_style/StyleState",
                     "strval": "USER_1",
                     "InheritedType": 1
                   },
                   {
                     "nid": -237873828,
-                    "compnid": 523914172,
+                    "compnid": 587614387,
                     "strtype": "_style/StyleState",
                     "strval": "USER_2",
                     "InheritedType": 1
                   },
                   {
                     "nid": -725239456,
-                    "compnid": -2100626379,
+                    "compnid": -1408460272,
                     "strtype": "_style/StyleState",
                     "strval": "USER_3",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1919539566,
-                    "compnid": 1398297423,
+                    "compnid": -875629074,
                     "strtype": "_style/StyleState",
                     "strval": "USER_4",
                     "InheritedType": 1
@@ -10063,91 +10069,91 @@
                   },
                   {
                     "nid": -1088766476,
-                    "compnid": 2016997691,
+                    "compnid": 1647650538,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1109244541,
-                    "compnid": -1673757534,
+                    "compnid": 1830848909,
                     "strtype": "_style/StyleState",
                     "strval": "PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1395591551,
-                    "compnid": 2041324741,
+                    "compnid": -1353496205,
                     "strtype": "_style/StyleState",
                     "strval": "DISABLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 258930609,
-                    "compnid": -463972654,
+                    "compnid": 1040747203,
                     "strtype": "_style/StyleState",
                     "strval": "SCROLLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1515502705,
-                    "compnid": 2059587316,
+                    "compnid": -422460697,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 496834692,
-                    "compnid": 1094440967,
+                    "compnid": -481169159,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": -2128158589,
-                    "compnid": -1473812619,
+                    "compnid": -1100222831,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -960028547,
-                    "compnid": 1438487004,
+                    "compnid": 88733566,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1120354472,
-                    "compnid": 795906596,
+                    "compnid": 1371972910,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1478696431,
-                    "compnid": -554895767,
+                    "compnid": 897445959,
                     "strtype": "_style/StyleState",
                     "strval": "USER_1",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1806394091,
-                    "compnid": 433301341,
+                    "compnid": -1535081831,
                     "strtype": "_style/StyleState",
                     "strval": "USER_2",
                     "InheritedType": 1
                   },
                   {
                     "nid": -792642946,
-                    "compnid": -279213002,
+                    "compnid": -1226140326,
                     "strtype": "_style/StyleState",
                     "strval": "USER_3",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1757534058,
-                    "compnid": -361044905,
+                    "compnid": -21625735,
                     "strtype": "_style/StyleState",
                     "strval": "USER_4",
                     "InheritedType": 1
@@ -10480,7 +10486,7 @@
                 "nid": 1178093775,
                 "compnid": 250384480,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/bg_greap_10x10.png",
+                "strval": "assets\\bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -10511,98 +10517,98 @@
                 "childs": [
                   {
                     "nid": -907165903,
-                    "compnid": -1278879828,
+                    "compnid": 316267805,
                     "strtype": "_style/StyleState",
                     "strval": "DEFAULT",
                     "InheritedType": 1
                   },
                   {
                     "nid": -463777373,
-                    "compnid": -2112649874,
+                    "compnid": -695958005,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -449501780,
-                    "compnid": 821876658,
+                    "compnid": -1976120645,
                     "strtype": "_style/StyleState",
                     "strval": "PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1708558475,
-                    "compnid": 720790366,
+                    "compnid": 495711879,
                     "strtype": "_style/StyleState",
                     "strval": "DISABLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 630672159,
-                    "compnid": -1801415615,
+                    "compnid": 1179398229,
                     "strtype": "_style/StyleState",
                     "strval": "SCROLLED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1421432737,
-                    "compnid": 1377928751,
+                    "compnid": -802616584,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 2078574718,
-                    "compnid": 843078918,
+                    "compnid": -206793767,
                     "strtype": "_style/StyleState",
                     "strval": "FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1880158158,
-                    "compnid": 311884055,
+                    "compnid": 483983597,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": -1863513129,
-                    "compnid": -228476656,
+                    "compnid": 1304153878,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|PRESSED",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1468219339,
-                    "compnid": 1110369100,
+                    "compnid": -161114786,
                     "strtype": "_style/StyleState",
                     "strval": "CHECKED|FOCUS_KEY",
                     "InheritedType": 1
                   },
                   {
                     "nid": -548758461,
-                    "compnid": -366742742,
+                    "compnid": 1258962438,
                     "strtype": "_style/StyleState",
                     "strval": "USER_1",
                     "InheritedType": 1
                   },
                   {
                     "nid": 2032401221,
-                    "compnid": -2028474345,
+                    "compnid": -360151916,
                     "strtype": "_style/StyleState",
                     "strval": "USER_2",
                     "InheritedType": 1
                   },
                   {
                     "nid": 2047663588,
-                    "compnid": -2129132976,
+                    "compnid": 392857551,
                     "strtype": "_style/StyleState",
                     "strval": "USER_3",
                     "InheritedType": 1
                   },
                   {
                     "nid": 1519457133,
-                    "compnid": 1549862075,
+                    "compnid": 234619156,
                     "strtype": "_style/StyleState",
                     "strval": "USER_4",
                     "InheritedType": 1
@@ -11206,7 +11212,7 @@
               {
                 "nid": -1323731858,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets/bg_greap_10x10.png",
+                "strval": "assets\\bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -11799,8 +11805,8 @@
     "theme_dark": false,
     "theme_color1": 5,
     "theme_color2": 0,
-    "uiExportFolderPath": "/Users/wangyansong/project/cooper/tempad/src/ui",
-    "projectExportFolderPath": "/Users/wangyansong/project/cooper/tempad/uiProject",
+    "uiExportFolderPath": "D:\\project\\PlatformIO\\Projects\\testTFT\\lib\\ui",
+    "projectExportFolderPath": "D:\\project\\PlatformIO\\Projects\\testTFT\\uiProject",
     "backup_cnt": 16,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.6",
