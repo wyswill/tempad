@@ -81,11 +81,14 @@ void ui_settingPage_screen_init(void)
 
     ui_wifiNameIn = lv_textarea_create(ui_settingPage);
     lv_obj_set_width(ui_wifiNameIn, 164);
-    lv_obj_set_height(ui_wifiNameIn, 31);
+    lv_obj_set_height(ui_wifiNameIn, LV_SIZE_CONTENT);    /// 31
     lv_obj_set_x(ui_wifiNameIn, 49);
     lv_obj_set_y(ui_wifiNameIn, -78);
     lv_obj_set_align(ui_wifiNameIn, LV_ALIGN_CENTER);
     lv_textarea_set_max_length(ui_wifiNameIn, 20);
+    lv_textarea_set_one_line(ui_wifiNameIn, true);
+    lv_obj_set_style_text_color(ui_wifiNameIn, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_wifiNameIn, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui_wifiNameIn, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_wifiNameIn, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_wifiNameIn, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -99,11 +102,15 @@ void ui_settingPage_screen_init(void)
 
     ui_wifiPassIn = lv_textarea_create(ui_settingPage);
     lv_obj_set_width(ui_wifiPassIn, 164);
-    lv_obj_set_height(ui_wifiPassIn, 31);
+    lv_obj_set_height(ui_wifiPassIn, LV_SIZE_CONTENT);    /// 31
     lv_obj_set_x(ui_wifiPassIn, 54);
     lv_obj_set_y(ui_wifiPassIn, -36);
     lv_obj_set_align(ui_wifiPassIn, LV_ALIGN_CENTER);
     lv_textarea_set_max_length(ui_wifiPassIn, 20);
+    lv_textarea_set_one_line(ui_wifiPassIn, true);
+    lv_textarea_set_password_mode(ui_wifiPassIn, true);
+    lv_obj_set_style_text_color(ui_wifiPassIn, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_wifiPassIn, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui_wifiPassIn, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_wifiPassIn, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_wifiPassIn, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -115,6 +122,38 @@ void ui_settingPage_screen_init(void)
 
 
 
+    ui_Keyboard1 = lv_keyboard_create(ui_settingPage);
+    lv_obj_set_width(ui_Keyboard1, 300);
+    lv_obj_set_height(ui_Keyboard1, 120);
+    lv_obj_set_x(ui_Keyboard1, 0);
+    lv_obj_set_y(ui_Keyboard1, 50);
+    lv_obj_set_align(ui_Keyboard1, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN);     /// Flags
+    lv_obj_set_style_bg_color(ui_Keyboard1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_Keyboard1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    lv_obj_set_style_bg_color(ui_Keyboard1, lv_color_hex(0x808080), LV_PART_ITEMS | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_Keyboard1, 255, LV_PART_ITEMS | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_grad_color(ui_Keyboard1, lv_color_hex(0x808080), LV_PART_ITEMS | LV_STATE_DEFAULT);
+
+    ui_Keyboard2 = lv_keyboard_create(ui_settingPage);
+    lv_obj_set_width(ui_Keyboard2, 300);
+    lv_obj_set_height(ui_Keyboard2, 120);
+    lv_obj_set_x(ui_Keyboard2, 0);
+    lv_obj_set_y(ui_Keyboard2, 50);
+    lv_obj_set_align(ui_Keyboard2, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Keyboard2, LV_OBJ_FLAG_HIDDEN);     /// Flags
+    lv_obj_set_style_bg_color(ui_Keyboard2, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_Keyboard2, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    lv_obj_set_style_bg_color(ui_Keyboard2, lv_color_hex(0x808080), LV_PART_ITEMS | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_Keyboard2, 255, LV_PART_ITEMS | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_grad_color(ui_Keyboard2, lv_color_hex(0x808080), LV_PART_ITEMS | LV_STATE_DEFAULT);
+
+    lv_obj_add_event_cb(ui_wifiNameIn, ui_event_wifiNameIn, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_wifiPassIn, ui_event_wifiPassIn, LV_EVENT_ALL, NULL);
+    lv_keyboard_set_textarea(ui_Keyboard1, ui_wifiNameIn);
+    lv_keyboard_set_textarea(ui_Keyboard2, ui_wifiPassIn);
     lv_obj_add_event_cb(ui_settingPage, ui_event_settingPage, LV_EVENT_ALL, NULL);
 
 }

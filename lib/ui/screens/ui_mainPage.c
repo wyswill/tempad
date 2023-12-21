@@ -47,10 +47,10 @@ void ui_mainPage_screen_init(void)
     lv_obj_clear_flag(ui_logo, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Label2 = lv_label_create(ui_mainPage);
-    lv_obj_set_width(ui_Label2, 240);
-    lv_obj_set_height(ui_Label2, 30);
-    lv_obj_set_x(ui_Label2, 71);
-    lv_obj_set_y(ui_Label2, -92);
+    lv_obj_set_width(ui_Label2, 186);
+    lv_obj_set_height(ui_Label2, 41);
+    lv_obj_set_x(ui_Label2, 51);
+    lv_obj_set_y(ui_Label2, -91);
     lv_obj_set_align(ui_Label2, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label2, "PLAY YOUR PART,PRUNE PRODENTLY");
     lv_obj_set_style_text_color(ui_Label2, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);

@@ -13,6 +13,7 @@ lv_obj_t * ui_bg_create(lv_obj_t * comp_parent)
 
     lv_obj_t * cui_bg;
     cui_bg = lv_img_create(comp_parent);
+    lv_img_set_src(cui_bg, &ui_img_bg_greap_10x10_png);
     lv_obj_set_width(cui_bg, lv_pct(100));
     lv_obj_set_height(cui_bg, lv_pct(100));
     lv_obj_set_x(cui_bg, -1);

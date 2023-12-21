@@ -56,8 +56,12 @@ extern lv_obj_t * ui_wifiName;
 extern lv_obj_t * ui_wifiPass;
 extern lv_obj_t * ui_city;
 extern lv_obj_t * ui_Roller1;
+void ui_event_wifiNameIn(lv_event_t * e);
 extern lv_obj_t * ui_wifiNameIn;
+void ui_event_wifiPassIn(lv_event_t * e);
 extern lv_obj_t * ui_wifiPassIn;
+extern lv_obj_t * ui_Keyboard1;
+extern lv_obj_t * ui_Keyboard2;
 // SCREEN: ui_albumPage
 void ui_albumPage_screen_init(void);
 void ui_event_albumPage(lv_event_t * e);
@@ -84,6 +88,7 @@ LV_IMG_DECLARE(ui_img_logo_100x50_png);    // assets\logo_100x50.png
 LV_IMG_DECLARE(ui_img_tva_logo_2_png);    // assets\TVA_LOGO_2.png
 
 LV_FONT_DECLARE(ui_font_scFont);
+LV_FONT_DECLARE(ui_font_fontSize8);
 
 void ui_init(void);
 

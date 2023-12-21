@@ -53,8 +53,12 @@ lv_obj_t * ui_wifiName;
 lv_obj_t * ui_wifiPass;
 lv_obj_t * ui_city;
 lv_obj_t * ui_Roller1;
+void ui_event_wifiNameIn(lv_event_t * e);
 lv_obj_t * ui_wifiNameIn;
+void ui_event_wifiPassIn(lv_event_t * e);
 lv_obj_t * ui_wifiPassIn;
+lv_obj_t * ui_Keyboard1;
+lv_obj_t * ui_Keyboard2;
 
 
 // SCREEN: ui_albumPage
@@ -173,6 +177,24 @@ void ui_event_settingPage(lv_event_t * e)
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_LONG_PRESSED) {
         _ui_screen_change(&ui_mainPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_mainPage_screen_init);
+    }
+}
+void ui_event_wifiNameIn(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        _ui_flag_modify(ui_Keyboard2, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_ADD);
+    }
+}
+void ui_event_wifiPassIn(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_flag_modify(ui_Keyboard2, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_ADD);
     }
 }
 void ui_event_albumPage(lv_event_t * e)

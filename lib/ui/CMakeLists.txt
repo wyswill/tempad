@@ -20,6 +20,7 @@ SET(SOURCES components/ui_comp_bg.c
     images/ui_img_mis_wite_60x60_png.c
     images/ui_img_logo_100x50_png.c
     images/ui_img_tva_logo_2_png.c
-    fonts/ui_font_scFont.c)
+    fonts/ui_font_scFont.c
+    fonts/ui_font_fontSize8.c)
 
 add_library(ui ${SOURCES})
