@@ -99,16 +99,3 @@ void lvgl_init()
   indev_drv.read_cb = touch_pad_read;      // 输入设备的回调函数
   lv_indev_drv_register(&indev_drv);      // 创建输入设备
 }
-
-
-// void showLogo()
-// {
-//   LV_IMG_DECLARE(main_scream_320x240);
-//   // 设置居中
-//   // int x = (MY_DISP_HOR_RES - tva.header.w) / 2; 
-//   // int y = (MY_DISP_VER_RES - tva.header.h) / 2;
-//   lv_obj_t *img = lv_img_create(lv_scr_act());
-//   lv_img_set_src(img, &main_scream_320x240);
-
-//   lv_obj_set_pos(img, 0, 0);
-// }
