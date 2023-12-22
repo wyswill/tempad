@@ -28,22 +28,23 @@ void ui_loading_screen_init(void)
     lv_img_set_src(ui_Image1, &ui_img_logo_120x70_png);
     lv_obj_set_width(ui_Image1, 120);
     lv_obj_set_height(ui_Image1, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Image1, -95);
-    lv_obj_set_y(ui_Image1, -68);
+    lv_obj_set_x(ui_Image1, -83);
+    lv_obj_set_y(ui_Image1, -76);
     lv_obj_set_align(ui_Image1, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image1, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Label1 = lv_label_create(ui_loading);
-    lv_obj_set_width(ui_Label1, 197);
+    lv_obj_set_width(ui_Label1, 173);
     lv_obj_set_height(ui_Label1, LV_SIZE_CONTENT);    /// 15
-    lv_obj_set_x(ui_Label1, 56);
-    lv_obj_set_y(ui_Label1, -31);
+    lv_obj_set_x(ui_Label1, -13);
+    lv_obj_set_y(ui_Label1, -18);
     lv_obj_set_align(ui_Label1, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label1, "Welcome to the Time Variance Authority!");
+    lv_label_set_long_mode(ui_Label1, LV_LABEL_LONG_DOT);
+    lv_label_set_text(ui_Label1, "Connecting to the TVA");
     lv_obj_set_style_text_color(ui_Label1, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label1, &ui_font_fontSize8, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label1, &ui_font_scFont, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_loadingBar = lv_bar_create(ui_loading);
     lv_obj_set_width(ui_loadingBar, 265);

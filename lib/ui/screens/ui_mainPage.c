@@ -62,7 +62,7 @@ void ui_mainPage_screen_init(void)
     lv_obj_set_width(ui_setting, 40);
     lv_obj_set_height(ui_setting, 60);
     lv_obj_set_x(ui_setting, -31);
-    lv_obj_set_y(ui_setting, -10);
+    lv_obj_set_y(ui_setting, -4);
     lv_obj_set_align(ui_setting, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_setting, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_setting, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -71,21 +71,11 @@ void ui_mainPage_screen_init(void)
     lv_img_set_src(ui_timeLine, &ui_img_timeline_40x60_png);
     lv_obj_set_width(ui_timeLine, 40);
     lv_obj_set_height(ui_timeLine, 60);
-    lv_obj_set_x(ui_timeLine, 52);
-    lv_obj_set_y(ui_timeLine, -9);
+    lv_obj_set_x(ui_timeLine, 45);
+    lv_obj_set_y(ui_timeLine, -4);
     lv_obj_set_align(ui_timeLine, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_timeLine, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_timeLine, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-
-    ui_album = lv_img_create(ui_mainPage);
-    lv_img_set_src(ui_album, &ui_img_album_40x60_png);
-    lv_obj_set_width(ui_album, 40);
-    lv_obj_set_height(ui_album, 60);
-    lv_obj_set_x(ui_album, 118);
-    lv_obj_set_y(ui_album, -9);
-    lv_obj_set_align(ui_album, LV_ALIGN_CENTER);
-    lv_obj_add_flag(ui_album, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
-    lv_obj_clear_flag(ui_album, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Label3 = lv_label_create(ui_mainPage);
     lv_obj_set_width(ui_Label3, LV_SIZE_CONTENT);   /// 1
@@ -113,19 +103,6 @@ void ui_mainPage_screen_init(void)
     lv_obj_set_style_bg_color(ui_Label4, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_Label4, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label5 = lv_label_create(ui_mainPage);
-    lv_obj_set_width(ui_Label5, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_Label5, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label5, 119);
-    lv_obj_set_y(ui_Label5, 43);
-    lv_obj_set_align(ui_Label5, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label5, "album");
-    lv_obj_add_flag(ui_Label5, LV_OBJ_FLAG_CLICKABLE);     /// Flags
-    lv_obj_set_style_text_color(ui_Label5, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_Label5, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_Label5, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Label5, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-
     ui_logo2 = lv_img_create(ui_mainPage);
     lv_img_set_src(ui_logo2, &ui_img_tva_logo_2_40x40_png);
     lv_obj_set_width(ui_logo2, 40);
@@ -148,7 +125,6 @@ void ui_mainPage_screen_init(void)
 
     lv_obj_add_event_cb(ui_setting, ui_event_setting, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_timeLine, ui_event_timeLine, LV_EVENT_ALL, NULL);
-    lv_obj_add_event_cb(ui_album, ui_event_album, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Label3, ui_event_Label3, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Label4, ui_event_Label4, LV_EVENT_ALL, NULL);
 

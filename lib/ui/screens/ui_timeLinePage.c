@@ -19,11 +19,20 @@ void ui_timeLinePage_screen_init(void)
     lv_img_set_src(ui_Image8, &ui_img_bg_greap_10x10_png);
     lv_obj_set_width(ui_Image8, lv_pct(100));
     lv_obj_set_height(ui_Image8, lv_pct(100));
-    lv_obj_set_x(ui_Image8, -2);
-    lv_obj_set_y(ui_Image8, -3);
     lv_obj_set_align(ui_Image8, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image8, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image8, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_ok = lv_btn_create(ui_timeLinePage);
+    lv_obj_set_width(ui_ok, 79);
+    lv_obj_set_height(ui_ok, 22);
+    lv_obj_set_x(ui_ok, -627);
+    lv_obj_set_y(ui_ok, 83);
+    lv_obj_set_align(ui_ok, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_ok, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_clear_flag(ui_ok, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_border_color(ui_ok, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_opa(ui_ok, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_timeLinePage, ui_event_timeLinePage, LV_EVENT_ALL, NULL);
 
