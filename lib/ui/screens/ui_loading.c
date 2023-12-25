@@ -25,11 +25,11 @@ void ui_loading_screen_init(void)
     lv_obj_clear_flag(ui_Image4, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Image1 = lv_img_create(ui_loading);
-    lv_img_set_src(ui_Image1, &ui_img_logo_120x70_png);
-    lv_obj_set_width(ui_Image1, 120);
+    lv_img_set_src(ui_Image1, &ui_img_logo_100x50_png);
+    lv_obj_set_width(ui_Image1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Image1, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Image1, -83);
-    lv_obj_set_y(ui_Image1, -76);
+    lv_obj_set_x(ui_Image1, -95);
+    lv_obj_set_y(ui_Image1, -67);
     lv_obj_set_align(ui_Image1, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image1, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags

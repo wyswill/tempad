@@ -11,7 +11,7 @@ void ui_timeLinePage_screen_init(void)
     lv_obj_clear_flag(ui_timeLinePage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_color(ui_timeLinePage, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_timeLinePage, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_color(ui_timeLinePage, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_color(ui_timeLinePage, lv_color_hex(0xD5570B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_timeLinePage, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_timeLinePage, 4, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -23,16 +23,21 @@ void ui_timeLinePage_screen_init(void)
     lv_obj_add_flag(ui_Image8, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image8, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_ok = lv_btn_create(ui_timeLinePage);
-    lv_obj_set_width(ui_ok, 79);
-    lv_obj_set_height(ui_ok, 22);
-    lv_obj_set_x(ui_ok, -627);
-    lv_obj_set_y(ui_ok, 83);
-    lv_obj_set_align(ui_ok, LV_ALIGN_CENTER);
-    lv_obj_add_flag(ui_ok, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
-    lv_obj_clear_flag(ui_ok, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_border_color(ui_ok, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_opa(ui_ok, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_Container2 = lv_obj_create(ui_timeLinePage);
+    lv_obj_remove_style_all(ui_Container2);
+    lv_obj_set_height(ui_Container2, 50);
+    lv_obj_set_width(ui_Container2, lv_pct(100));
+    lv_obj_set_align(ui_Container2, LV_ALIGN_TOP_MID);
+    lv_obj_clear_flag(ui_Container2, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_Image12 = lv_img_create(ui_Container2);
+    lv_img_set_src(ui_Image12, &ui_img_logo_47x20_png);
+    lv_obj_set_width(ui_Image12, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Image12, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Image12, 9);
+    lv_obj_set_y(ui_Image12, 10);
+    lv_obj_add_flag(ui_Image12, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image12, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     lv_obj_add_event_cb(ui_timeLinePage, ui_event_timeLinePage, LV_EVENT_ALL, NULL);
 

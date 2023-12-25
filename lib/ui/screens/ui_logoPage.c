@@ -16,9 +16,11 @@ void ui_logoPage_screen_init(void)
     lv_obj_set_style_border_width(ui_logoPage, 4, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Image3 = lv_img_create(ui_logoPage);
-    lv_img_set_src(ui_Image3, &ui_img_logo_100x50_png);
+    lv_img_set_src(ui_Image3, &ui_img_logo_200x85_png);
     lv_obj_set_width(ui_Image3, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Image3, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Image3, 3);
+    lv_obj_set_y(ui_Image3, -34);
     lv_obj_set_align(ui_Image3, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image3, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image3, LV_OBJ_FLAG_SCROLLABLE);      /// Flags

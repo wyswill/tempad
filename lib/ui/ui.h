@@ -36,8 +36,17 @@ extern lv_obj_t * ui_logo;
 extern lv_obj_t * ui_Label2;
 extern lv_obj_t * ui_logo2;
 extern lv_obj_t * ui_Image9;
+void ui_event_settingContainer(lv_event_t * e);
+extern lv_obj_t * ui_settingContainer;
 extern lv_obj_t * ui_Image7;
 extern lv_obj_t * ui_Label3;
+void ui_event_timeLineContainer(lv_event_t * e);
+extern lv_obj_t * ui_timeLineContainer;
+extern lv_obj_t * ui_Image10;
+extern lv_obj_t * ui_Label4;
+extern lv_obj_t * ui_albumContainer;
+extern lv_obj_t * ui_Image11;
+extern lv_obj_t * ui_Label5;
 // SCREEN: ui_settingPage
 void ui_settingPage_screen_init(void);
 extern lv_obj_t * ui_settingPage;
@@ -68,17 +77,20 @@ void ui_timeLinePage_screen_init(void);
 void ui_event_timeLinePage(lv_event_t * e);
 extern lv_obj_t * ui_timeLinePage;
 extern lv_obj_t * ui_Image8;
-extern lv_obj_t * ui_ok;
+extern lv_obj_t * ui_Container2;
+extern lv_obj_t * ui_Image12;
 extern lv_obj_t * ui____initial_actions0;
 
-LV_IMG_DECLARE(ui_img_logo_100x50_png);    // assets\logo_100x50.png
+LV_IMG_DECLARE(ui_img_logo_200x85_png);    // assets\logo_200x85.png
 LV_IMG_DECLARE(ui_img_bg_greap_10x10_png);    // assets\bg_greap_10x10.png
-LV_IMG_DECLARE(ui_img_logo_120x70_png);    // assets\logo_120x70.png
-LV_IMG_DECLARE(ui_img_tva_logo_2_40x40_png);    // assets\TVA_LOGO_2_40x40.png
+LV_IMG_DECLARE(ui_img_logo_100x50_png);    // assets\logo_100x50.png
+LV_IMG_DECLARE(ui_img_logo2_40x40_png);    // assets\logo2_40x40.png
 LV_IMG_DECLARE(ui_img_mis_wite_60x60_png);    // assets\mis_wite_60X60.png
-LV_IMG_DECLARE(ui_img_sqre_60x80_png);    // assets\sqre_60X80.png
+LV_IMG_DECLARE(ui_img_setting_full_png);    // assets\setting_full.png
+LV_IMG_DECLARE(ui_img_timeline_png);    // assets\timeLine.png
+LV_IMG_DECLARE(ui_img_album_png);    // assets\album.png
 LV_IMG_DECLARE(ui_img_miss_loading_40x40_png);    // assets\miss_loading_40x40.png
-LV_IMG_DECLARE(ui_img_album_40x60_png);    // assets\album_40x60.png
+LV_IMG_DECLARE(ui_img_logo_47x20_png);    // assets\logo_47x20.png
 LV_IMG_DECLARE(ui_img_tva_logo_2_png);    // assets\TVA_LOGO_2.png
 
 LV_FONT_DECLARE(ui_font_fontSize8);
