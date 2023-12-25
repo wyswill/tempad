@@ -13,10 +13,9 @@ SET(SOURCES components/ui_comp_bg.c
     images/ui_img_logo_100x50_png.c
     images/ui_img_bg_greap_10x10_png.c
     images/ui_img_logo_120x70_png.c
-    images/ui_img_setting_40x60_png.c
-    images/ui_img_timeline_40x60_png.c
     images/ui_img_tva_logo_2_40x40_png.c
     images/ui_img_mis_wite_60x60_png.c
+    images/ui_img_sqre_60x80_png.c
     images/ui_img_miss_loading_40x40_png.c
     images/ui_img_album_40x60_png.c
     images/ui_img_tva_logo_2_png.c

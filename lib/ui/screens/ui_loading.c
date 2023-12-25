@@ -12,7 +12,7 @@ void ui_loading_screen_init(void)
     lv_obj_set_style_bg_color(ui_loading, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_loading, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_img_opa(ui_loading, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_color(ui_loading, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_color(ui_loading, lv_color_hex(0xD5570B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_loading, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_loading, 4, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -42,7 +42,7 @@ void ui_loading_screen_init(void)
     lv_obj_set_align(ui_Label1, LV_ALIGN_CENTER);
     lv_label_set_long_mode(ui_Label1, LV_LABEL_LONG_DOT);
     lv_label_set_text(ui_Label1, "Connecting to the TVA");
-    lv_obj_set_style_text_color(ui_Label1, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui_Label1, lv_color_hex(0xD5570B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label1, &ui_font_scFont, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -55,7 +55,7 @@ void ui_loading_screen_init(void)
     lv_obj_set_style_radius(ui_loadingBar, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_loadingBar, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_loadingBar, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_color(ui_loadingBar, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_color(ui_loadingBar, lv_color_hex(0xD5570B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_loadingBar, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_loadingBar, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_left(ui_loadingBar, 5, LV_PART_MAIN | LV_STATE_DEFAULT);

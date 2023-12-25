@@ -9,9 +9,9 @@ void ui_logoPage_screen_init(void)
 {
     ui_logoPage = lv_obj_create(NULL);
     lv_obj_clear_flag(ui_logoPage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_bg_color(ui_logoPage, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_logoPage, lv_color_hex(0x262626), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_logoPage, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_color(ui_logoPage, lv_color_hex(0xD1743B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_color(ui_logoPage, lv_color_hex(0xD5570B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_logoPage, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_logoPage, 4, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -26,26 +26,32 @@ void ui_logoPage_screen_init(void)
     ui_F = lv_label_create(ui_logoPage);
     lv_obj_set_width(ui_F, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_F, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_F, -39);
+    lv_obj_set_x(ui_F, -60);
     lv_obj_set_y(ui_F, 57);
     lv_obj_set_align(ui_F, LV_ALIGN_CENTER);
     lv_label_set_text(ui_F, "For");
+    lv_obj_set_style_text_color(ui_F, lv_color_hex(0x808080), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_F, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_A = lv_label_create(ui_logoPage);
     lv_obj_set_width(ui_A, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_A, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_A, -15);
+    lv_obj_set_x(ui_A, -30);
     lv_obj_set_y(ui_A, 57);
     lv_obj_set_align(ui_A, LV_ALIGN_CENTER);
     lv_label_set_text(ui_A, "All");
+    lv_obj_set_style_text_color(ui_A, lv_color_hex(0x808080), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_A, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_T = lv_label_create(ui_logoPage);
     lv_obj_set_width(ui_T, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_T, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_T, 20);
+    lv_obj_set_x(ui_T, 10);
     lv_obj_set_y(ui_T, 57);
     lv_obj_set_align(ui_T, LV_ALIGN_CENTER);
     lv_label_set_text(ui_T, "Time.");
+    lv_obj_set_style_text_color(ui_T, lv_color_hex(0x808080), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_T, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Label10 = lv_label_create(ui_logoPage);
     lv_obj_set_width(ui_Label10, LV_SIZE_CONTENT);   /// 1
@@ -54,5 +60,7 @@ void ui_logoPage_screen_init(void)
     lv_obj_set_y(ui_Label10, 57);
     lv_obj_set_align(ui_Label10, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label10, "Always!");
+    lv_obj_set_style_text_color(ui_Label10, lv_color_hex(0x808080), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_Label10, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
 }

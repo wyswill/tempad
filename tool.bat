@@ -1,1 +1,1 @@
-ffmpeg -i mis_wite.png -vf scale=60:60 mis_wite_60X60.png
+ffmpeg -i sqre.png -vf scale=60:80 sqre_60X80.png

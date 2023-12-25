@@ -1,6 +1,5 @@
 #include "Arduino.h"
 #include "lvgl_helper.h"
-#include "tempad.h"
 #include "ui.h"
 
 void setup(void)

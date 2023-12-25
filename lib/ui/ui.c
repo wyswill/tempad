@@ -29,16 +29,10 @@ lv_obj_t * ui_Image5;
 lv_obj_t * ui_Container1;
 lv_obj_t * ui_logo;
 lv_obj_t * ui_Label2;
-void ui_event_setting(lv_event_t * e);
-lv_obj_t * ui_setting;
-void ui_event_timeLine(lv_event_t * e);
-lv_obj_t * ui_timeLine;
-void ui_event_Label3(lv_event_t * e);
-lv_obj_t * ui_Label3;
-void ui_event_Label4(lv_event_t * e);
-lv_obj_t * ui_Label4;
 lv_obj_t * ui_logo2;
 lv_obj_t * ui_Image9;
+lv_obj_t * ui_Image7;
+lv_obj_t * ui_Label3;
 
 
 // SCREEN: ui_settingPage
@@ -83,10 +77,9 @@ const lv_img_dsc_t * ui_imgset_logo_100x[1] = {&ui_img_logo_100x50_png};
 const lv_img_dsc_t * ui_imgset_logo_120x[1] = {&ui_img_logo_120x70_png};
 const lv_img_dsc_t * ui_imgset_miss_loading_x[1] = {&ui_img_miss_loading_40x40_png};
 const lv_img_dsc_t * ui_imgset_mis_wite_x[1] = {&ui_img_mis_wite_60x60_png};
-const lv_img_dsc_t * ui_imgset_setting_40x[1] = {&ui_img_setting_40x60_png};
-const lv_img_dsc_t * ui_imgset_timeline_40x[1] = {&ui_img_timeline_40x60_png};
 const lv_img_dsc_t * ui_imgset_tva_logo_[1] = {&ui_img_tva_logo_2_png};
 const lv_img_dsc_t * ui_imgset_tva_logo_2_x[1] = {&ui_img_tva_logo_2_40x40_png};
+const lv_img_dsc_t * ui_imgset_sqre_60x[1] = {&ui_img_sqre_60x80_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -166,38 +159,6 @@ void A_Animation(lv_obj_t * TargetObject, int delay)
 }
 
 ///////////////////// FUNCTIONS ////////////////////
-void ui_event_setting(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_settingPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_settingPage_screen_init);
-    }
-}
-void ui_event_timeLine(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_timeLinePage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_timeLinePage_screen_init);
-    }
-}
-void ui_event_Label3(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_settingPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_settingPage_screen_init);
-    }
-}
-void ui_event_Label4(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_settingPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_settingPage_screen_init);
-    }
-}
 void ui_event_wifiNameIn(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
