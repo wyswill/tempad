@@ -11,10 +11,8 @@ void setup(void)
   disp_drv_init();
   // 初始化lvgl
   lvgl_init();
-
   ui_init();
   // Tempad tp;
-  // tp.loading_page();
 }
 
 void loop()

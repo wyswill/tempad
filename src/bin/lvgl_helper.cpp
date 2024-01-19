@@ -21,7 +21,7 @@ void disp_drv_init()
   /* 旋转角度 0、1、2、3 对应 0 、90度、180度、270 */
   tft.setRotation(3);
   /* 关闭颜色反转 */
-  tft.invertDisplay(0);
+  tft.invertDisplay(1);
 }
 
 /**
