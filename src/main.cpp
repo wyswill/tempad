@@ -1,6 +1,16 @@
 #include "Arduino.h"
 #include "lvgl_helper.h"
-#include "ui.h"
+// #include "ui.h"
+
+void lv_example_gif(void)
+{
+  LV_IMG_DECLARE(out_img);
+  lv_obj_t *img;
+
+  img = lv_gif_create(lv_scr_act());
+  lv_gif_set_src(img, &out_img);
+  lv_obj_set_pos(img, 0, 0);
+}
 
 void setup(void)
 {
@@ -11,8 +21,8 @@ void setup(void)
   disp_drv_init();
   // 初始化lvgl
   lvgl_init();
-  ui_init();
-  // Tempad tp;
+  lv_example_gif();
+  // ui_init();
 }
 
 void loop()
