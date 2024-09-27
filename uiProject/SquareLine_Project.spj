@@ -267,7 +267,7 @@
               {
                 "nid": 1096111807,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\logo_200x85.png",
+                "strval": "assets/logo_200x85.png",
                 "InheritedType": 5
               },
               {
@@ -1853,8 +1853,8 @@
           {
             "disabled": false,
             "nid": 1730773754,
-            "strtype": "SCREEN/EventHandler",
-            "strval": "SCREEN_LOADED",
+            "strtype": "_event/EventHandler",
+            "strval": "CLICKED",
             "childs": [
               {
                 "nid": 1308672448,
@@ -1876,7 +1876,7 @@
               },
               {
                 "nid": -346813580,
-                "strtype": "_custom/action",
+                "strtype": "_event/action",
                 "strval": "CHANGE SCREEN",
                 "childs": [
                   {
@@ -2194,7 +2194,7 @@
               {
                 "nid": 215844220,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\bg_greap_10x10.png",
+                "strval": "assets/bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -2492,7 +2492,7 @@
                   {
                     "nid": 1858693510,
                     "strtype": "IMAGE/Asset",
-                    "strval": "assets\\logo_100x50.png",
+                    "strval": "assets/logo_100x50.png",
                     "InheritedType": 5
                   },
                   {
@@ -3399,7 +3399,7 @@
               {
                 "nid": 506502903,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\logo2_40x40.png",
+                "strval": "assets/logo2_40x40.png",
                 "InheritedType": 5
               },
               {
@@ -3693,7 +3693,7 @@
               {
                 "nid": 381988187,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\mis_wite_60X60.png",
+                "strval": "assets/mis_wite_60X60.png",
                 "InheritedType": 5
               },
               {
@@ -3991,7 +3991,7 @@
                   {
                     "nid": -1628007548,
                     "strtype": "IMAGE/Asset",
-                    "strval": "assets\\setting_full.png",
+                    "strval": "assets/setting_full.png",
                     "InheritedType": 5
                   },
                   {
@@ -4622,7 +4622,7 @@
               {
                 "disabled": false,
                 "nid": -1867566732,
-                "strtype": "CONTAINER/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "CLICKED",
                 "childs": [
                   {
@@ -4645,7 +4645,7 @@
                   },
                   {
                     "nid": -2056721282,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CHANGE SCREEN",
                     "childs": [
                       {
@@ -4962,7 +4962,7 @@
                   {
                     "nid": 1413151966,
                     "strtype": "IMAGE/Asset",
-                    "strval": "assets\\timeLine.png",
+                    "strval": "assets/timeLine.png",
                     "InheritedType": 5
                   },
                   {
@@ -5593,7 +5593,7 @@
               {
                 "disabled": false,
                 "nid": -297413952,
-                "strtype": "CONTAINER/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "CLICKED",
                 "childs": [
                   {
@@ -5616,7 +5616,7 @@
                   },
                   {
                     "nid": 829315996,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CHANGE SCREEN",
                     "childs": [
                       {
@@ -5933,7 +5933,7 @@
                   {
                     "nid": 653677781,
                     "strtype": "IMAGE/Asset",
-                    "strval": "assets\\album.png",
+                    "strval": "assets/album.png",
                     "InheritedType": 5
                   },
                   {
@@ -7079,7 +7079,7 @@
               {
                 "nid": 1658712791,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\bg_greap_10x10.png",
+                "strval": "assets/bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -10901,7 +10901,7 @@
               {
                 "nid": -1446774425,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\bg_greap_10x10.png",
+                "strval": "assets/bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -11195,7 +11195,7 @@
               {
                 "nid": 399984970,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\logo_100x50.png",
+                "strval": "assets/logo_100x50.png",
                 "InheritedType": 5
               },
               {
@@ -12154,7 +12154,7 @@
               {
                 "nid": 537016468,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\miss_loading_40x40.png",
+                "strval": "assets/miss_loading_40x40.png",
                 "InheritedType": 5
               },
               {
@@ -12878,7 +12878,7 @@
               {
                 "nid": -1323731858,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\bg_greap_10x10.png",
+                "strval": "assets/bg_greap_10x10.png",
                 "InheritedType": 5
               },
               {
@@ -13176,7 +13176,7 @@
                   {
                     "nid": -1207320929,
                     "strtype": "IMAGE/Asset",
-                    "strval": "assets\\logo_47x20.png",
+                    "strval": "assets/logo_47x20.png",
                     "InheritedType": 5
                   },
                   {
@@ -14370,7 +14370,7 @@
               {
                 "nid": 1289018846,
                 "strtype": "IMAGE/Asset",
-                "strval": "assets\\mis_wite_60X60.png",
+                "strval": "assets/mis_wite_60X60.png",
                 "InheritedType": 5
               },
               {
@@ -15346,8 +15346,8 @@
     "shape": "RECTANGLE",
     "multilang": "DISABLE",
     "description": "",
-    "board": "Visual Studio 2019 for development on Windows PC",
-    "board_version": "v1.0.2",
+    "board": "Eclipse with SDL for development on PC",
+    "board_version": "v1.0.1",
     "editor_version": "1.3.4",
     "image": "",
     "force_export_images": false,
@@ -15357,8 +15357,8 @@
     "theme_dark": false,
     "theme_color1": 5,
     "theme_color2": 0,
-    "uiExportFolderPath": "D:\\project\\PlatformIO\\Projects\\SquareLine_Project\\./LVGL.Simulator/ui",
-    "projectExportFolderPath": "D:\\project\\PlatformIO\\Projects\\SquareLine_Project",
+    "uiExportFolderPath": "/Users/wangyansong/project/cooper/tempad/lib/ui",
+    "projectExportFolderPath": "/Users/wangyansong/project/cooper/tempad/uiProject",
     "backup_cnt": 53,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.6",

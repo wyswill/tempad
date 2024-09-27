@@ -50,6 +50,8 @@ static void touch_pad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
 
   bool touched = tft.getTouch(&touchX, &touchY, 600);
 
+  Serial.printf("%d",touched);
+
   if (!touched)
   {
     data->state = LV_INDEV_STATE_REL;

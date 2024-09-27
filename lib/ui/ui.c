@@ -7,88 +7,92 @@
 #include "ui_helpers.h"
 
 ///////////////////// VARIABLES ////////////////////
-void moveTimeLogo_Animation(lv_obj_t * TargetObject, int delay);
-void F_Animation(lv_obj_t * TargetObject, int delay);
-void A_Animation(lv_obj_t * TargetObject, int delay);
+void moveTimeLogo_Animation( lv_obj_t *TargetObject, int delay);
+void F_Animation( lv_obj_t *TargetObject, int delay);
+void A_Animation( lv_obj_t *TargetObject, int delay);
 
 
 // SCREEN: ui_logoPage
 void ui_logoPage_screen_init(void);
-lv_obj_t * ui_logoPage;
-lv_obj_t * ui_Image3;
-lv_obj_t * ui_F;
-lv_obj_t * ui_A;
-lv_obj_t * ui_T;
-lv_obj_t * ui_Label10;
+void ui_event_logoPage( lv_event_t * e);
+lv_obj_t *ui_logoPage;
+lv_obj_t *ui_Image3;
+lv_obj_t *ui_F;
+lv_obj_t *ui_A;
+lv_obj_t *ui_T;
+lv_obj_t *ui_Label10;
 
 
 // SCREEN: ui_mainPage
 void ui_mainPage_screen_init(void);
-lv_obj_t * ui_mainPage;
-lv_obj_t * ui_Image5;
-lv_obj_t * ui_Container1;
-lv_obj_t * ui_logo;
-lv_obj_t * ui_Label2;
-lv_obj_t * ui_logo2;
-lv_obj_t * ui_Image9;
-void ui_event_settingContainer(lv_event_t * e);
-lv_obj_t * ui_settingContainer;
-lv_obj_t * ui_Image7;
-lv_obj_t * ui_Label3;
-void ui_event_timeLineContainer(lv_event_t * e);
-lv_obj_t * ui_timeLineContainer;
-lv_obj_t * ui_Image10;
-lv_obj_t * ui_Label4;
-lv_obj_t * ui_albumContainer;
-lv_obj_t * ui_Image11;
-lv_obj_t * ui_Label5;
+lv_obj_t *ui_mainPage;
+lv_obj_t *ui_Image5;
+lv_obj_t *ui_Container1;
+lv_obj_t *ui_logo;
+lv_obj_t *ui_Label2;
+lv_obj_t *ui_logo2;
+lv_obj_t *ui_Image9;
+void ui_event_settingContainer( lv_event_t * e);
+lv_obj_t *ui_settingContainer;
+lv_obj_t *ui_Image7;
+lv_obj_t *ui_Label3;
+void ui_event_timeLineContainer( lv_event_t * e);
+lv_obj_t *ui_timeLineContainer;
+lv_obj_t *ui_Image10;
+lv_obj_t *ui_Label4;
+lv_obj_t *ui_albumContainer;
+lv_obj_t *ui_Image11;
+lv_obj_t *ui_Label5;
 
 
 // SCREEN: ui_settingPage
 void ui_settingPage_screen_init(void);
-lv_obj_t * ui_settingPage;
-lv_obj_t * ui_Image6;
-lv_obj_t * ui_wifiName;
-lv_obj_t * ui_wifiPass;
-void ui_event_wifiNameIn(lv_event_t * e);
-lv_obj_t * ui_wifiNameIn;
-void ui_event_wifiPassIn(lv_event_t * e);
-lv_obj_t * ui_wifiPassIn;
-void ui_event_connectBtn(lv_event_t * e);
-lv_obj_t * ui_connectBtn;
-lv_obj_t * ui_Label6;
-lv_obj_t * ui_backBtn;
-lv_obj_t * ui_Label7;
-lv_obj_t * ui_Keyboard1;
+lv_obj_t *ui_settingPage;
+lv_obj_t *ui_Image6;
+lv_obj_t *ui_wifiName;
+lv_obj_t *ui_wifiPass;
+void ui_event_wifiNameIn( lv_event_t * e);
+lv_obj_t *ui_wifiNameIn;
+void ui_event_wifiPassIn( lv_event_t * e);
+lv_obj_t *ui_wifiPassIn;
+void ui_event_connectBtn( lv_event_t * e);
+lv_obj_t *ui_connectBtn;
+lv_obj_t *ui_Label6;
+lv_obj_t *ui_backBtn;
+lv_obj_t *ui_Label7;
+lv_obj_t *ui_Keyboard1;
 
 
 // SCREEN: ui_loading
 void ui_loading_screen_init(void);
-void ui_event_loading(lv_event_t * e);
-lv_obj_t * ui_loading;
-lv_obj_t * ui_Image4;
-lv_obj_t * ui_Image1;
-lv_obj_t * ui_Label1;
-lv_obj_t * ui_loadingBar;
-lv_obj_t * ui_Image2;
+void ui_event_loading( lv_event_t * e);
+lv_obj_t *ui_loading;
+lv_obj_t *ui_Image4;
+lv_obj_t *ui_Image1;
+lv_obj_t *ui_Label1;
+lv_obj_t *ui_loadingBar;
+lv_obj_t *ui_Image2;
 
 
 // SCREEN: ui_timeLinePage
 void ui_timeLinePage_screen_init(void);
-void ui_event_timeLinePage(lv_event_t * e);
-lv_obj_t * ui_timeLinePage;
-lv_obj_t * ui_Image8;
-lv_obj_t * ui_Container2;
-lv_obj_t * ui_Image12;
-lv_obj_t * ui____initial_actions0;
-const lv_img_dsc_t * ui_imgset_bg_greap_x[1] = {&ui_img_bg_greap_10x10_png};
-const lv_img_dsc_t * ui_imgset_logo_100x[1] = {&ui_img_logo_100x50_png};
-const lv_img_dsc_t * ui_imgset_miss_loading_x[1] = {&ui_img_miss_loading_40x40_png};
-const lv_img_dsc_t * ui_imgset_mis_wite_x[1] = {&ui_img_mis_wite_60x60_png};
-const lv_img_dsc_t * ui_imgset_tva_logo_[1] = {&ui_img_tva_logo_2_png};
-const lv_img_dsc_t * ui_imgset_logo_200x[1] = {&ui_img_logo_200x85_png};
-const lv_img_dsc_t * ui_imgset_logo_47x[1] = {&ui_img_logo_47x20_png};
-const lv_img_dsc_t * ui_imgset_logo2_x[1] = {&ui_img_logo2_40x40_png};
+void ui_event_timeLinePage( lv_event_t * e);
+lv_obj_t *ui_timeLinePage;
+lv_obj_t *ui_Image8;
+lv_obj_t *ui_Container2;
+lv_obj_t *ui_Image12;
+lv_obj_t *ui_Label8;
+lv_obj_t *ui_Container3;
+lv_obj_t *ui_Image13;
+lv_obj_t *ui____initial_actions0;
+const lv_img_dsc_t *ui_imgset_tva_logo_[1] = {&ui_img_tva_logo_2_png};
+const lv_img_dsc_t *ui_imgset_bg_greap_x[1] = {&ui_img_bg_greap_10x10_png};
+const lv_img_dsc_t *ui_imgset_logo2_x[1] = {&ui_img_logo2_40x40_png};
+const lv_img_dsc_t *ui_imgset_logo_100x[1] = {&ui_img_logo_100x50_png};
+const lv_img_dsc_t *ui_imgset_logo_200x[1] = {&ui_img_logo_200x85_png};
+const lv_img_dsc_t *ui_imgset_logo_47x[1] = {&ui_img_logo_47x20_png};
+const lv_img_dsc_t *ui_imgset_mis_wite_x[1] = {&ui_img_mis_wite_60x60_png};
+const lv_img_dsc_t *ui_imgset_miss_loading_x[1] = {&ui_img_miss_loading_40x40_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -99,151 +103,141 @@ const lv_img_dsc_t * ui_imgset_logo2_x[1] = {&ui_img_logo2_40x40_png};
 #endif
 
 ///////////////////// ANIMATIONS ////////////////////
-void moveTimeLogo_Animation(lv_obj_t * TargetObject, int delay)
+void moveTimeLogo_Animation( lv_obj_t *TargetObject, int delay)
 {
-    ui_anim_user_data_t * PropertyAnimation_0_user_data = lv_mem_alloc(sizeof(ui_anim_user_data_t));
-    PropertyAnimation_0_user_data->target = TargetObject;
-    PropertyAnimation_0_user_data->val = -1;
-    lv_anim_t PropertyAnimation_0;
-    lv_anim_init(&PropertyAnimation_0);
-    lv_anim_set_time(&PropertyAnimation_0, 500);
-    lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
-    lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_x);
-    lv_anim_set_values(&PropertyAnimation_0, 0, 100);
-    lv_anim_set_path_cb(&PropertyAnimation_0, lv_anim_path_linear);
-    lv_anim_set_delay(&PropertyAnimation_0, delay + 0);
-    lv_anim_set_deleted_cb(&PropertyAnimation_0, _ui_anim_callback_free_user_data);
-    lv_anim_set_playback_time(&PropertyAnimation_0, 0);
-    lv_anim_set_playback_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_count(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_early_apply(&PropertyAnimation_0, false);
-    lv_anim_start(&PropertyAnimation_0);
+ui_anim_user_data_t *PropertyAnimation_0_user_data = lv_mem_alloc(sizeof(ui_anim_user_data_t));
+PropertyAnimation_0_user_data->target = TargetObject;
+PropertyAnimation_0_user_data->val = -1;
+lv_anim_t PropertyAnimation_0;
+lv_anim_init(&PropertyAnimation_0);
+lv_anim_set_time(&PropertyAnimation_0, 500);
+lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
+lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_x );
+lv_anim_set_values(&PropertyAnimation_0, 0, 100 );
+lv_anim_set_path_cb( &PropertyAnimation_0, lv_anim_path_linear);
+lv_anim_set_delay( &PropertyAnimation_0, delay + 0 );
+lv_anim_set_deleted_cb( &PropertyAnimation_0, _ui_anim_callback_free_user_data );
+lv_anim_set_playback_time(&PropertyAnimation_0, 0);
+lv_anim_set_playback_delay(&PropertyAnimation_0, 0);
+ lv_anim_set_repeat_count(&PropertyAnimation_0, 0);
+lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
+lv_anim_set_early_apply( &PropertyAnimation_0, false );
+lv_anim_start(&PropertyAnimation_0);
 
 }
-void F_Animation(lv_obj_t * TargetObject, int delay)
+void F_Animation( lv_obj_t *TargetObject, int delay)
 {
-    ui_anim_user_data_t * PropertyAnimation_0_user_data = lv_mem_alloc(sizeof(ui_anim_user_data_t));
-    PropertyAnimation_0_user_data->target = TargetObject;
-    PropertyAnimation_0_user_data->val = -1;
-    lv_anim_t PropertyAnimation_0;
-    lv_anim_init(&PropertyAnimation_0);
-    lv_anim_set_time(&PropertyAnimation_0, 1000);
-    lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
-    lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_opacity);
-    lv_anim_set_values(&PropertyAnimation_0, 0, 255);
-    lv_anim_set_path_cb(&PropertyAnimation_0, lv_anim_path_linear);
-    lv_anim_set_delay(&PropertyAnimation_0, delay + 0);
-    lv_anim_set_deleted_cb(&PropertyAnimation_0, _ui_anim_callback_free_user_data);
-    lv_anim_set_playback_time(&PropertyAnimation_0, 0);
-    lv_anim_set_playback_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_count(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_early_apply(&PropertyAnimation_0, false);
-    lv_anim_start(&PropertyAnimation_0);
+ui_anim_user_data_t *PropertyAnimation_0_user_data = lv_mem_alloc(sizeof(ui_anim_user_data_t));
+PropertyAnimation_0_user_data->target = TargetObject;
+PropertyAnimation_0_user_data->val = -1;
+lv_anim_t PropertyAnimation_0;
+lv_anim_init(&PropertyAnimation_0);
+lv_anim_set_time(&PropertyAnimation_0, 1000);
+lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
+lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_opacity );
+lv_anim_set_values(&PropertyAnimation_0, 0, 255 );
+lv_anim_set_path_cb( &PropertyAnimation_0, lv_anim_path_linear);
+lv_anim_set_delay( &PropertyAnimation_0, delay + 0 );
+lv_anim_set_deleted_cb( &PropertyAnimation_0, _ui_anim_callback_free_user_data );
+lv_anim_set_playback_time(&PropertyAnimation_0, 0);
+lv_anim_set_playback_delay(&PropertyAnimation_0, 0);
+ lv_anim_set_repeat_count(&PropertyAnimation_0, 0);
+lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
+lv_anim_set_early_apply( &PropertyAnimation_0, false );
+lv_anim_start(&PropertyAnimation_0);
 
 }
-void A_Animation(lv_obj_t * TargetObject, int delay)
+void A_Animation( lv_obj_t *TargetObject, int delay)
 {
-    ui_anim_user_data_t * PropertyAnimation_0_user_data = lv_mem_alloc(sizeof(ui_anim_user_data_t));
-    PropertyAnimation_0_user_data->target = TargetObject;
-    PropertyAnimation_0_user_data->val = -1;
-    lv_anim_t PropertyAnimation_0;
-    lv_anim_init(&PropertyAnimation_0);
-    lv_anim_set_time(&PropertyAnimation_0, 1000);
-    lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
-    lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_opacity);
-    lv_anim_set_values(&PropertyAnimation_0, 0, 255);
-    lv_anim_set_path_cb(&PropertyAnimation_0, lv_anim_path_linear);
-    lv_anim_set_delay(&PropertyAnimation_0, delay + 0);
-    lv_anim_set_deleted_cb(&PropertyAnimation_0, _ui_anim_callback_free_user_data);
-    lv_anim_set_playback_time(&PropertyAnimation_0, 0);
-    lv_anim_set_playback_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_count(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_early_apply(&PropertyAnimation_0, false);
-    lv_anim_set_get_value_cb(&PropertyAnimation_0, &_ui_anim_callback_get_opacity);
-    lv_anim_start(&PropertyAnimation_0);
+ui_anim_user_data_t *PropertyAnimation_0_user_data = lv_mem_alloc(sizeof(ui_anim_user_data_t));
+PropertyAnimation_0_user_data->target = TargetObject;
+PropertyAnimation_0_user_data->val = -1;
+lv_anim_t PropertyAnimation_0;
+lv_anim_init(&PropertyAnimation_0);
+lv_anim_set_time(&PropertyAnimation_0, 1000);
+lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
+lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_opacity );
+lv_anim_set_values(&PropertyAnimation_0, 0, 255 );
+lv_anim_set_path_cb( &PropertyAnimation_0, lv_anim_path_linear);
+lv_anim_set_delay( &PropertyAnimation_0, delay + 0 );
+lv_anim_set_deleted_cb( &PropertyAnimation_0, _ui_anim_callback_free_user_data );
+lv_anim_set_playback_time(&PropertyAnimation_0, 0);
+lv_anim_set_playback_delay(&PropertyAnimation_0, 0);
+ lv_anim_set_repeat_count(&PropertyAnimation_0, 0);
+lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
+lv_anim_set_early_apply( &PropertyAnimation_0, false );
+ lv_anim_set_get_value_cb(&PropertyAnimation_0, &_ui_anim_callback_get_opacity );
+lv_anim_start(&PropertyAnimation_0);
 
 }
 
 ///////////////////// FUNCTIONS ////////////////////
-void ui_event_settingContainer(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_settingPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_settingPage_screen_init);
-    }
+void ui_event_logoPage( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_screen_change( &ui_mainPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 3000, &ui_mainPage_screen_init);
 }
-void ui_event_timeLineContainer(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_timeLinePage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_timeLinePage_screen_init);
-    }
 }
-void ui_event_wifiNameIn(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_keyboard_set_target(ui_Keyboard1,  ui_wifiNameIn);
-        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-    }
+void ui_event_settingContainer( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_screen_change( &ui_settingPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_settingPage_screen_init);
 }
-void ui_event_wifiPassIn(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_keyboard_set_target(ui_Keyboard1,  ui_wifiPassIn);
-        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-    }
 }
-void ui_event_connectBtn(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_loading, LV_SCR_LOAD_ANIM_NONE, 100, 0, &ui_loading_screen_init);
-    }
+void ui_event_timeLineContainer( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_screen_change( &ui_timeLinePage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_timeLinePage_screen_init);
 }
-void ui_event_loading(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_SCREEN_LOADED) {
-        _ui_bar_increment(ui_loadingBar, 100, LV_ANIM_ON);
-        moveTimeLogo_Animation(ui_Image2, 0);
-        _ui_screen_change(&ui_mainPage, LV_SCR_LOAD_ANIM_FADE_ON, 100, 550, &ui_mainPage_screen_init);
-    }
 }
-void ui_event_timeLinePage(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_LONG_PRESSED) {
-        _ui_screen_change(&ui_mainPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_mainPage_screen_init);
-    }
+void ui_event_wifiNameIn( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_keyboard_set_target(ui_Keyboard1,  ui_wifiNameIn);
+      _ui_flag_modify( ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+}
+}
+void ui_event_wifiPassIn( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_keyboard_set_target(ui_Keyboard1,  ui_wifiPassIn);
+      _ui_flag_modify( ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+}
+}
+void ui_event_connectBtn( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_screen_change( &ui_loading, LV_SCR_LOAD_ANIM_NONE, 100, 0, &ui_loading_screen_init);
+}
+}
+void ui_event_loading( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_SCREEN_LOADED) {
+      _ui_bar_increment( ui_loadingBar, 100, LV_ANIM_ON);
+      moveTimeLogo_Animation(ui_Image2, 0);
+      _ui_screen_change( &ui_mainPage, LV_SCR_LOAD_ANIM_FADE_ON, 100, 550, &ui_mainPage_screen_init);
+}
+}
+void ui_event_timeLinePage( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_LONG_PRESSED) {
+      _ui_screen_change( &ui_mainPage, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_mainPage_screen_init);
+}
 }
 
 ///////////////////// SCREENS ////////////////////
 
-void ui_init(void)
-{
-    LV_EVENT_GET_COMP_CHILD = lv_event_register_id();
+void ui_init( void )
+{LV_EVENT_GET_COMP_CHILD = lv_event_register_id();
 
-    lv_disp_t * dispp = lv_disp_get_default();
-    lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
-                                               false, LV_FONT_DEFAULT);
-    lv_disp_set_theme(dispp, theme);
-    ui_logoPage_screen_init();
-    ui_mainPage_screen_init();
-    ui_settingPage_screen_init();
-    ui_loading_screen_init();
-    ui_timeLinePage_screen_init();
-    ui____initial_actions0 = lv_obj_create(NULL);
-    lv_disp_load_scr(ui_logoPage);
+lv_disp_t *dispp = lv_disp_get_default();
+lv_theme_t *theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED), false, LV_FONT_DEFAULT);
+lv_disp_set_theme(dispp, theme);
+ui_logoPage_screen_init();
+ui_mainPage_screen_init();
+ui_settingPage_screen_init();
+ui_loading_screen_init();
+ui_timeLinePage_screen_init();
+ui____initial_actions0 = lv_obj_create(NULL);
+lv_disp_load_scr( ui_logoPage);
 }
