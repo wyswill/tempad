@@ -10,91 +10,95 @@
 extern "C" {
 #endif
 
-#include "lvgl.h"
+    #include "lvgl.h"
 
 #include "ui_helpers.h"
 #include "components/ui_comp.h"
 #include "components/ui_comp_hook.h"
 #include "ui_events.h"
-void moveTimeLogo_Animation(lv_obj_t * TargetObject, int delay);
-void F_Animation(lv_obj_t * TargetObject, int delay);
-void A_Animation(lv_obj_t * TargetObject, int delay);
+void moveTimeLogo_Animation( lv_obj_t *TargetObject, int delay);
+void F_Animation( lv_obj_t *TargetObject, int delay);
+void A_Animation( lv_obj_t *TargetObject, int delay);
 // SCREEN: ui_logoPage
 void ui_logoPage_screen_init(void);
-extern lv_obj_t * ui_logoPage;
-extern lv_obj_t * ui_Image3;
-extern lv_obj_t * ui_F;
-extern lv_obj_t * ui_A;
-extern lv_obj_t * ui_T;
-extern lv_obj_t * ui_Label10;
+void ui_event_logoPage( lv_event_t * e);
+extern lv_obj_t *ui_logoPage;
+extern lv_obj_t *ui_Image3;
+extern lv_obj_t *ui_F;
+extern lv_obj_t *ui_A;
+extern lv_obj_t *ui_T;
+extern lv_obj_t *ui_Label10;
 // SCREEN: ui_mainPage
 void ui_mainPage_screen_init(void);
-extern lv_obj_t * ui_mainPage;
-extern lv_obj_t * ui_Image5;
-extern lv_obj_t * ui_Container1;
-extern lv_obj_t * ui_logo;
-extern lv_obj_t * ui_Label2;
-extern lv_obj_t * ui_logo2;
-extern lv_obj_t * ui_Image9;
-void ui_event_settingContainer(lv_event_t * e);
-extern lv_obj_t * ui_settingContainer;
-extern lv_obj_t * ui_Image7;
-extern lv_obj_t * ui_Label3;
-void ui_event_timeLineContainer(lv_event_t * e);
-extern lv_obj_t * ui_timeLineContainer;
-extern lv_obj_t * ui_Image10;
-extern lv_obj_t * ui_Label4;
-extern lv_obj_t * ui_albumContainer;
-extern lv_obj_t * ui_Image11;
-extern lv_obj_t * ui_Label5;
+extern lv_obj_t *ui_mainPage;
+extern lv_obj_t *ui_Image5;
+extern lv_obj_t *ui_Container1;
+extern lv_obj_t *ui_logo;
+extern lv_obj_t *ui_Label2;
+extern lv_obj_t *ui_logo2;
+extern lv_obj_t *ui_Image9;
+void ui_event_settingContainer( lv_event_t * e);
+extern lv_obj_t *ui_settingContainer;
+extern lv_obj_t *ui_Image7;
+extern lv_obj_t *ui_Label3;
+void ui_event_timeLineContainer( lv_event_t * e);
+extern lv_obj_t *ui_timeLineContainer;
+extern lv_obj_t *ui_Image10;
+extern lv_obj_t *ui_Label4;
+extern lv_obj_t *ui_albumContainer;
+extern lv_obj_t *ui_Image11;
+extern lv_obj_t *ui_Label5;
 // SCREEN: ui_settingPage
 void ui_settingPage_screen_init(void);
-extern lv_obj_t * ui_settingPage;
-extern lv_obj_t * ui_Image6;
-extern lv_obj_t * ui_wifiName;
-extern lv_obj_t * ui_wifiPass;
-void ui_event_wifiNameIn(lv_event_t * e);
-extern lv_obj_t * ui_wifiNameIn;
-void ui_event_wifiPassIn(lv_event_t * e);
-extern lv_obj_t * ui_wifiPassIn;
-void ui_event_connectBtn(lv_event_t * e);
-extern lv_obj_t * ui_connectBtn;
-extern lv_obj_t * ui_Label6;
-extern lv_obj_t * ui_backBtn;
-extern lv_obj_t * ui_Label7;
-extern lv_obj_t * ui_Keyboard1;
+extern lv_obj_t *ui_settingPage;
+extern lv_obj_t *ui_Image6;
+extern lv_obj_t *ui_wifiName;
+extern lv_obj_t *ui_wifiPass;
+void ui_event_wifiNameIn( lv_event_t * e);
+extern lv_obj_t *ui_wifiNameIn;
+void ui_event_wifiPassIn( lv_event_t * e);
+extern lv_obj_t *ui_wifiPassIn;
+void ui_event_connectBtn( lv_event_t * e);
+extern lv_obj_t *ui_connectBtn;
+extern lv_obj_t *ui_Label6;
+extern lv_obj_t *ui_backBtn;
+extern lv_obj_t *ui_Label7;
+extern lv_obj_t *ui_Keyboard1;
 // SCREEN: ui_loading
 void ui_loading_screen_init(void);
-void ui_event_loading(lv_event_t * e);
-extern lv_obj_t * ui_loading;
-extern lv_obj_t * ui_Image4;
-extern lv_obj_t * ui_Image1;
-extern lv_obj_t * ui_Label1;
-extern lv_obj_t * ui_loadingBar;
-extern lv_obj_t * ui_Image2;
+void ui_event_loading( lv_event_t * e);
+extern lv_obj_t *ui_loading;
+extern lv_obj_t *ui_Image4;
+extern lv_obj_t *ui_Image1;
+extern lv_obj_t *ui_Label1;
+extern lv_obj_t *ui_loadingBar;
+extern lv_obj_t *ui_Image2;
 // SCREEN: ui_timeLinePage
 void ui_timeLinePage_screen_init(void);
-void ui_event_timeLinePage(lv_event_t * e);
-extern lv_obj_t * ui_timeLinePage;
-extern lv_obj_t * ui_Image8;
-extern lv_obj_t * ui_Container2;
-extern lv_obj_t * ui_Image12;
-extern lv_obj_t * ui____initial_actions0;
+void ui_event_timeLinePage( lv_event_t * e);
+extern lv_obj_t *ui_timeLinePage;
+extern lv_obj_t *ui_Image8;
+extern lv_obj_t *ui_Container2;
+extern lv_obj_t *ui_Image12;
+extern lv_obj_t *ui_Label8;
+extern lv_obj_t *ui_Container3;
+extern lv_obj_t *ui_Image13;
+extern lv_obj_t *ui____initial_actions0;
 
-LV_IMG_DECLARE(ui_img_logo_200x85_png);    // assets\logo_200x85.png
-LV_IMG_DECLARE(ui_img_bg_greap_10x10_png);    // assets\bg_greap_10x10.png
-LV_IMG_DECLARE(ui_img_logo_100x50_png);    // assets\logo_100x50.png
-LV_IMG_DECLARE(ui_img_logo2_40x40_png);    // assets\logo2_40x40.png
-LV_IMG_DECLARE(ui_img_mis_wite_60x60_png);    // assets\mis_wite_60X60.png
-LV_IMG_DECLARE(ui_img_setting_full_png);    // assets\setting_full.png
-LV_IMG_DECLARE(ui_img_timeline_png);    // assets\timeLine.png
-LV_IMG_DECLARE(ui_img_album_png);    // assets\album.png
-LV_IMG_DECLARE(ui_img_miss_loading_40x40_png);    // assets\miss_loading_40x40.png
-LV_IMG_DECLARE(ui_img_logo_47x20_png);    // assets\logo_47x20.png
-LV_IMG_DECLARE(ui_img_tva_logo_2_png);    // assets\TVA_LOGO_2.png
+LV_IMG_DECLARE( ui_img_logo_200x85_png);   // assets/logo_200x85.png
+LV_IMG_DECLARE( ui_img_bg_greap_10x10_png);   // assets/bg_greap_10x10.png
+LV_IMG_DECLARE( ui_img_logo_100x50_png);   // assets/logo_100x50.png
+LV_IMG_DECLARE( ui_img_logo2_40x40_png);   // assets/logo2_40x40.png
+LV_IMG_DECLARE( ui_img_mis_wite_60x60_png);   // assets/mis_wite_60X60.png
+LV_IMG_DECLARE( ui_img_setting_full_png);   // assets/setting_full.png
+LV_IMG_DECLARE( ui_img_timeline_png);   // assets/timeLine.png
+LV_IMG_DECLARE( ui_img_album_png);   // assets/album.png
+LV_IMG_DECLARE( ui_img_miss_loading_40x40_png);   // assets/miss_loading_40x40.png
+LV_IMG_DECLARE( ui_img_logo_47x20_png);   // assets/logo_47x20.png
+LV_IMG_DECLARE( ui_img_tva_logo_2_png);   // assets/TVA_LOGO_2.png
 
-LV_FONT_DECLARE(ui_font_fontSize8);
-LV_FONT_DECLARE(ui_font_scFont);
+LV_FONT_DECLARE( ui_font_fontSize8);
+LV_FONT_DECLARE( ui_font_scFont);
 
 void ui_init(void);
 
